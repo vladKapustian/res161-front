@@ -43,6 +43,7 @@ export const QuestionsForm = () => {
         <div className={styles.headers}>
           <p className={styles.headerText}>ОСТАЛИСЬ ВОПРОСЫ?</p>
           <p className={styles.headerText}>+7(938) 111-14-53</p>
+          <p className={styles.headerText}>+7(938) 111-14-53</p>
         </div>
         <p className={styles.descriptionText}>
           Вы можете позвонить нам или отправить электронное письмо, и наш
