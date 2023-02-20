@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
-import * as Yup from "yup";
-import { Form } from "formik";
 import { useFormik } from "formik";
+import * as Yup from "yup";
 
 export const QuestionsForm = () => {
   const { values, handleSubmit, handleChange, handleBlur, errors, touched } =
@@ -32,7 +31,13 @@ export const QuestionsForm = () => {
           "Поле должно содержать 20 символов или меньше"
         ),
       }),
-      onSubmit: (values) => {
+      onSubmit: (values: {
+        name: string;
+        email: string;
+        phoneNumber: string;
+        city: string;
+        message: string;
+      }) => {
         console.log(values);
       },
     });
@@ -98,7 +103,11 @@ export const QuestionsForm = () => {
           ></textarea>
         </form>
         <div className={styles.centerButton}>
-          <button className={styles.button} onClick={() => handleSubmit()}>
+          <button
+            type="button"
+            className={styles.button}
+            onClick={() => handleSubmit()}
+          >
             Отправить
           </button>
         </div>

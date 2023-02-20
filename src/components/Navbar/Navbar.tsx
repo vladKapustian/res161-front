@@ -7,6 +7,8 @@ import Link from "next/link";
 import { categories } from "src/assets/temporaryData/temporaryData";
 import { useState } from "react";
 import { AboutUsModal } from "../contactsModal/AboutUs.modal";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 export const Navbar = () => {
   const copyTextToClipboard = async () => {
@@ -30,6 +32,8 @@ export const Navbar = () => {
 
   const [modalIsShown, setModalIsShown] = useState(false);
 
+  const [tooltipText, setTooltipText] = useState("Скопировать текст");
+
   const openModal = () => {
     setModalIsShown(true);
     document.body.style.overflow = "hidden";
@@ -51,9 +55,21 @@ export const Navbar = () => {
             РостЭнергоСтрой
           </Link>
           <input className={styles.searchBar} type="text" />
-          <p className={styles.email} onClick={copyTextToClipboard}>
+          <p
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content={tooltipText}
+            className={styles.email}
+            onClick={() => {
+              copyTextToClipboard;
+              setTooltipText("Текст скопирован");
+            }}
+          >
             {email}
           </p>
+          <Tooltip
+            afterHide={() => setTooltipText("Скопировать текст")}
+            id="my-tooltip"
+          />
           <p onClick={openModal} className={styles.contactInfo}>
             <Image
               className={styles.contactInfoIcon}
