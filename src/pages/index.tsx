@@ -6,16 +6,14 @@ import {
   Navbar,
   QuestionsForm,
 } from "src/components";
+import { string } from "yup";
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <Navbar />
       <AboutUs />
       <SalesHits />
       <QuestionsForm />
-      <Footer />
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import styles from "./styles.module.css";
 import Image from "next/image";
 import type { IProductPublicList } from "src/assets/temporaryData/temporaryData";
+import LikeIcon from "src/assets/svg/LikeIcon";
 
 import MockImage from "src/assets/images/vikluchatel_vk_10.jpg";
+import { useState } from "react";
 
-/** принимает 1 товар и возвращает карточку с товаром */
 export const ProductCard = ({ product }: { product: IProductPublicList }) => {
+  const [isFavourite, setIsFavourite] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
@@ -18,7 +20,17 @@ export const ProductCard = ({ product }: { product: IProductPublicList }) => {
           className={styles.image}
         ></Image>
       </div>
-      <p className={styles.name}>{product.name}</p>
+
+      <div className={styles.productBottomBar}>
+        <p className={styles.name}>{product.name}</p>
+        <LikeIcon
+          onClick={() => {
+            setIsFavourite((prev) => !prev);
+            localStorage.setItem;
+          }}
+          active={isFavourite}
+        />
+      </div>
     </div>
   );
 };

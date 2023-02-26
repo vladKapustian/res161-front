@@ -32,7 +32,7 @@ export const Navbar = () => {
 
   const [modalIsShown, setModalIsShown] = useState(false);
 
-  const [tooltipText, setTooltipText] = useState("Скопировать текст");
+  const [tooltipText, setTooltipText] = useState("Нажмите, чтобы скопировать");
 
   const openModal = () => {
     setModalIsShown(true);
@@ -67,7 +67,7 @@ export const Navbar = () => {
             {email}
           </p>
           <Tooltip
-            afterHide={() => setTooltipText("Скопировать текст")}
+            afterHide={() => setTooltipText("Нажмите, чтобы скопировать")}
             id="my-tooltip"
           />
           <p onClick={openModal} className={styles.contactInfo}>

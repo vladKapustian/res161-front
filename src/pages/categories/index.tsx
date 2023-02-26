@@ -1,2 +1,8 @@
-import { Footer, Hero, Navbar, QuestionsForm } from "src/components";
+import { ICategory } from "src/assets/temporaryData/temporaryData";
+import { categories } from "src/assets/temporaryData/temporaryData";
 
+const categoriesPage = () => {
+  return <></>;
+};
+
+export default categoriesPage;

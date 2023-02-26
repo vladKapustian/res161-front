@@ -30,3 +30,14 @@
   line-height: 120%;
   color: #002033;
 }
+
+.productBottomBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.liked {
+  color: pink;
+}
