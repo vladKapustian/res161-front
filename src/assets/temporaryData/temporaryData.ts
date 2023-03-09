@@ -245,6 +245,7 @@ export interface ICategory {
     keywords?: string;
     description?: string;
   };
+  images: Record<ImageSize, IImage>;
 }
 
 export const categories: ICategory[] = [
@@ -254,6 +255,28 @@ export const categories: ICategory[] = [
     slug: "transformatory",
     description:
       "vhdklsajckjsadljsal as dsaidioiajdio aspod asoijd sajiodsaoihsauihsadhuisad",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
   {
     id: 2,
@@ -261,6 +284,28 @@ export const categories: ICategory[] = [
     slug: "ne_transformatory",
     description:
       "vhdklsajckjsadljsal as dsaidioiajdio aspod asoijd sajiodsaoihsauihsadhuisad",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
   {
     id: 3,
@@ -268,23 +313,111 @@ export const categories: ICategory[] = [
     slug: "transistory",
     description:
       "vhdklsajckjsadljsal as dsaidioiajdio aspod asoijd sajiodsaoihsauihsadhuisad",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
   {
     id: 4,
     name: "Не Транзисторы",
     slug: "ne_transistory",
     description: "qwdqdwqdqw",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
   {
     id: 5,
     name: "Электросчетчики",
     slug: "electroschetchiki",
     description: "dsasdadsadsa",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
   {
     id: 6,
     name: "Электросчетчики",
     slug: "electroschetchiki",
     description: "dsasdadsadsa",
+    images: {
+      small: {
+        height: 48,
+        width: 48,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      medium: {
+        height: 320,
+        width: 252,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      original: {
+        height: 720,
+        width: 360,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+      big: {
+        height: 1280,
+        width: 1280,
+        uri: "./src/assets/images/vikluchatel_vk_10.jpg",
+      },
+    },
   },
 ];

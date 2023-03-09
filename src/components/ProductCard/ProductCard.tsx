@@ -5,11 +5,15 @@ import LikeIcon from "src/assets/svg/LikeIcon";
 
 import MockImage from "src/assets/images/vikluchatel_vk_10.jpg";
 import { useState } from "react";
+import Link from "next/link";
 
 export const ProductCard = ({ product }: { product: IProductPublicList }) => {
   const [isFavourite, setIsFavourite] = useState(false);
   return (
-    <div className={styles.container}>
+    <Link
+      href={`/categories/product/${encodeURIComponent(product.id)}`}
+      className={styles.container}
+    >
       <div className={styles.imageContainer}>
         <Image
           width={product.images.medium.width}
@@ -31,6 +35,6 @@ export const ProductCard = ({ product }: { product: IProductPublicList }) => {
           active={isFavourite}
         />
       </div>
-    </div>
+    </Link>
   );
 };

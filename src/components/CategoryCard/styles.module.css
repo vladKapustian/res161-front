@@ -3,42 +3,34 @@
   flex-direction: column;
   cursor: pointer;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 8px 12px;
+  width: 20%;
+  color: #002033;
   text-decoration: none;
 }
 
 .imageContainer {
+  width: 100%;
   overflow: hidden;
 }
 
 .image {
-  border-radius: 4px;
   transition: 0.3s;
+  display: block;
+  width: 100%;
 }
 
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
+  backface-visibility: hidden;
 
   display: block;
 }
 
 .name {
-  padding: 10px 0px;
-
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 120%;
   color: #002033;
-}
-
-.productBottomBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.liked {
-  color: pink;
+  text-decoration: none;
 }

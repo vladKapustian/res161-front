@@ -6,3 +6,4 @@ export { Footer } from "./Footer/Footer";
 export { ProductCard } from "./ProductCard/ProductCard";
 export { SalesHits } from "./SalesHits/SalesHits";
 export { QuestionsForm } from "./QuestionsForm/QuestionsForm";
+export { CategoryCard } from "./CategoryCard/CategoryCard";

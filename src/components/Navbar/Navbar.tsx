@@ -22,7 +22,10 @@ export const Navbar = () => {
 
   const goodsCategories = categories.slice(0, 5).map((category) => {
     return (
-      <Link className={styles.category} href={"#"}>
+      <Link
+        className={styles.category}
+        href={`/categories/${encodeURIComponent(category.slug)}`}
+      >
         {category.name}
       </Link>
     );

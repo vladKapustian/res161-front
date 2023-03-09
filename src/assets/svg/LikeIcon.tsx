@@ -11,7 +11,7 @@ const LikeIcon = ({ active, onClick }: Props) => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      stroke={active ? "red" : "currentColor"}
+      stroke={active ? "red" : "#002033"}
       fill={active ? "red" : "none"}
       xmlns="http://www.w3.org/2000/svg"
       className={active ? styles.active : styles.inactive}
