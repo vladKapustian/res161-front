@@ -1,14 +1,17 @@
-import styles from "./styles.module.css";
+import { Tooltip } from "react-tooltip";
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 import contactsIcon from "src/assets/images/phoneIcon.png";
 import favouritesIcon from "src/assets/images/favouritesIcon.png";
-import homeIcon from "src/assets/images/homeIcon.png";
-import Link from "next/link";
-import { categories } from "src/assets/temporaryData/temporaryData";
-import { useState } from "react";
 import { AboutUsModal } from "../contactsModal/AboutUs.modal";
+import { categories } from "src/assets/temporaryData/temporaryData";
+
+import homeIcon from "src/assets/images/homeIcon.png";
+
 import "react-tooltip/dist/react-tooltip.css";
-import { Tooltip } from "react-tooltip";
+import styles from "./styles.module.css";
 
 export const Navbar = () => {
   const copyTextToClipboard = async () => {
