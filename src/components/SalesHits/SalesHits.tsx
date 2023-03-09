@@ -4,7 +4,7 @@ import { productsPublic } from "src/assets/temporaryData/temporaryData";
 
 export const SalesHits = () => {
   const products = productsPublic.slice(0, 5).map((product) => {
-    return <ProductCard product={product} />;
+    return <ProductCard key={product.id} product={product} />;
   });
   return (
     <div className={styles.container}>

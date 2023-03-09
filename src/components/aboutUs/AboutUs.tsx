@@ -10,8 +10,12 @@ const principles = [
   "• Гарантия качества",
 ];
 
-const ourPrinciples = principles.map((x) => {
-  return <p className={styles.principles}>{x}</p>;
+const ourPrinciples = principles.map((x, index) => {
+  return (
+    <p key={index} className={styles.principles}>
+      {x}
+    </p>
+  );
 });
 
 export const AboutUs = () => {

@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const CategoriesPage = () => {
   const categoriesList = categories.map((category) => {
-    return <CategoryCard category={category}></CategoryCard>;
+    return <CategoryCard key={category.id} category={category}></CategoryCard>;
   });
 
   return (

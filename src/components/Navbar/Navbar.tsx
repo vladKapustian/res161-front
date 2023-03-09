@@ -25,6 +25,7 @@ export const Navbar = () => {
       <Link
         className={styles.category}
         href={`/categories/${encodeURIComponent(category.slug)}`}
+        key={category.id}
       >
         {category.name}
       </Link>

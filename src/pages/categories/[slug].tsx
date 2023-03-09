@@ -1,12 +1,11 @@
 import { GetServerSideProps } from "next/types";
 import { productsPublic } from "src/assets/temporaryData/temporaryData";
-import { IProductPublicList } from "src/assets/temporaryData/temporaryData";
 import { ProductCard } from "src/components";
 import slug from "./slug.module.css";
 
 export const CategoryPage = () => {
-  const products = productsPublic.map((product: IProductPublicList) => {
-    return <ProductCard product={product}></ProductCard>;
+  const products = productsPublic.map((product) => {
+    return <ProductCard key={product.id} product={product}></ProductCard>;
   });
 
   return (
