@@ -19,16 +19,11 @@ export const QuestionsForm = () => {
         email: Yup.string()
           .email("Невалидный Email")
           .required("Обязательное поле"),
-        phoneNumber: Yup.string()
-          .max(20, "Поле должно содержать 20 символов или меньше")
-          .required("Required"),
-        city: Yup.string().max(
-          20,
-          "Поле должно содержать 20 символов или меньше"
-        ),
+        phoneNumber: Yup.string().required("Required"),
+        city: Yup.string(),
         message: Yup.string().max(
           200,
-          "Поле должно содержать 20 символов или меньше"
+          "Поле должно содержать 200 символов или меньше"
         ),
       }),
       onSubmit: (values: {
